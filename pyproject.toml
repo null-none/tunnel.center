@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "tunnel.pyjam.as"
+version = "0.1.0"
+description = ""
+authors = [
+  "Asbjørn Kofoed-Nielsen <asbjorn.ko.ni@gmail.com>",
+  "Carl Bordum Hansen <carl@bordum.dk>",
+  "Kalinin Mitko <kalinin.mitko@gmail.com>"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.27.1"
+Flask = "^2.1.1"
+gunicorn = "^20.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+mypy = "^0.942"
+flake8 = "^4.0.1"
+types-requests = "^2.27.25"
+flake8-bugbear = "^22.4.25"
+flake8-import-order = "^0.18.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

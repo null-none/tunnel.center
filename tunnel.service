@@ -1,0 +1,13 @@
+[Unit]
+Description=tunnel.center Tunneling made easy by tunnel.center feat. WireGuard
+After=network.target auditd.service
+
+[Service]
+Environment=TUNNEL_WG_PORT=55555
+Environment=TUNNEL_HOSTNAME=tunnel.center
+Environment=TUNNEL_WG_INTERFACE_NAME=tunnel 
+WorkingDirectory=/root/tunnel
+ExecStart=poetry run gunicorn -w 1 -b '0.0.0.0:5000' tunnel:app
+
+[Install]
+WantedBy=multi-user.target

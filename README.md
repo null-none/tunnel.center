@@ -4,7 +4,7 @@
 services. This may be useful, for instance when you need to show your friend
 something cool you've built.
 
-`tunnel.centers` works without installing any software on your machine,
+`tunnel.center` works without installing any software on your machine,
 thanks to the magic of Wireguard.
 
 

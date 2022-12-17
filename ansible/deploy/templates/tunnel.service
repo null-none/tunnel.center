@@ -6,7 +6,7 @@ After=network.target auditd.service
 Environment=TUNNEL_WG_PORT=55555
 Environment=TUNNEL_HOSTNAME=tunnel.center
 Environment=TUNNEL_WG_INTERFACE_NAME=tunnel 
-WorkingDirectory=/root/tunnel
+WorkingDirectory=/root/tunnel.center
 ExecStart=poetry run gunicorn -w 1 -b '0.0.0.0:5000' tunnel:app
 
 [Install]
